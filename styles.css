@@ -5,7 +5,7 @@
 
 .container{
     display: grid;
-    grid: 1fr 4fr/1fr 3fr;  
+    grid: 2fr 10fr/1fr 3fr;  
     font: 18px Arial, Helvetica, sans-serif;
 }
 
@@ -37,6 +37,7 @@
 
 .center{
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -64,7 +65,7 @@ form img, .marginRight {
 
 input[type="search"]{
     border-radius: 30px;
-    background-color: lightgrey;
+    background-color: #e2e8f0;
     border: none;
     width: 500px;
     height: 20px;
@@ -99,30 +100,92 @@ button {
   }
 
 .content{
-    background-color: grey;
+    background-color: #e2e8f0;
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     grid: 1fr / 2fr 1fr;
-    gap: 5px;
-    padding: 5px;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    position: relative;
 }
+
 
 .projectContent {
     display: grid;
     grid: 1fr 1fr 1fr / 1fr 1fr;
-    gap: 5px;
+    gap: 20px;
+    position: relative;
 }
 
-.projectContent div {
-    background-color: aquamarine;
+.forTitle{
+    position: relative;
+}
+
+.titlePosition{
+    position: absolute;
+    top: -30px;
+    left: 0px;
+}
+
+.projectContent > div {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectDescription{
+    margin: 20px;
+}
+
+.projectButton {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .addContent {
     display: grid;
     grid: 1fr 1fr;
-    gap: 20px;
+    gap: 60px;
+    position: relative;
 }
 
-.addContent div{
-    background-color: orange;
+.announcement {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid: repeat(3, 1fr);
+}
+
+.announcementDescription{
+    margin: 20px;
+    font-size: 12px;
+    border-bottom: solid grey 1px;
+}
+
+
+.trending {
+    background-color: white;
+    display: grid;
+}
+
+.trendingList {
+    display: grid;
+    border-radius: 10px;
+    grid: repeat(4, 1fr);
+}
+
+.trendingDescription{
+    margin: 20px;
+    border-bottom: solid grey 1px;
+    font-size: 15px;
+}
+
+.Last{
+    border-bottom: none;
 }
